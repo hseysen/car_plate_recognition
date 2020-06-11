@@ -29,10 +29,6 @@ def process_text(text, image):
 def main():
     h1 = 256
     w1 = 768
-    try:
-        os.remove("./test_images/delete_this_after.png")
-    except FileNotFoundError:
-        pass
 
     for file in os.listdir("test_images"):
         print(file)
@@ -100,4 +96,12 @@ if __name__ == "__main__":
                                 "'pytesseract.pytesseract.tesseract_cmd'"
                                 "If you don't have Tesseract-OCR, please refer to https://tesseract-ocr.github.io/")
     else:
+        try:
+            os.remove("./test_images/delete_this_after.png")
+        except FileNotFoundError:
+            pass
         main()
+        try:
+            os.remove("./test_images/delete_this_after.png")
+        except FileNotFoundError:
+            pass
