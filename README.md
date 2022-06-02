@@ -24,7 +24,7 @@ You need Tesseract-OCR installed on your computer to run this. Read more about i
 After installing Tesseract-OCR, on the 6th line of my code, I have set the path to the Tesseract-OCR to a string saying "YOUR PATH TO TESSERACT", make sure to change it to the appropriate path to _tesseract.exe_ file.
 
 ### Needed packages
-I have provided the _venv/_ folder, but just in case you don't want to download the project, here is the list of packages that you need to run this:
+Here is the list of packages that you need to run this:
 * opencv-python
 * Pillow
 * numpy
